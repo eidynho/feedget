@@ -36,7 +36,7 @@ export function Form({ feedbackType, onFeedbackCanceled, onFeedbackSent }: Props
 
   function handleScreenshot() {
     captureScreen({
-      format: 'jpg',
+      format: 'png',
       quality: 0.8
     })
     .then(uri => setScreenshot(uri))
